@@ -1,0 +1,4 @@
+services:
+  external_file_proxy:
+    class: Drupal\external_file_proxy\ExternalFileProxy
+    arguments: ['@entity_type.manager', '@http_client', '@logger.factory', '@cache.default']

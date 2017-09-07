@@ -1,0 +1,26 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_efp_file
+    - media_entity.bundle.external_file_proxy
+  module:
+    - file
+id: media.external_file_proxy.field_efp_file
+field_name: field_efp_file
+entity_type: media
+bundle: external_file_proxy
+label: File
+description: 'Cached external file.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: external_file_proxy
+  file_extensions: 'txt rtf doc docx csv xls xlsx pdf zip gz tar tar.gz 7z rar'
+  max_filesize: '10 MB'
+  description_field: true
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

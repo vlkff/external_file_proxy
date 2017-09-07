@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_efp_origin_url
+    - media_entity.bundle.external_file_proxy
+  module:
+    - link
+id: media.external_file_proxy.field_efp_origin_url
+field_name: field_efp_origin_url
+entity_type: media
+bundle: external_file_proxy
+label: 'Origin URL'
+description: 'File origin url.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 0
+field_type: link

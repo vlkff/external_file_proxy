@@ -1,0 +1,7 @@
+# Main page for our example.
+external_file_proxy.proxy:
+  path: 'external-file-proxy/proxy/{uri}'
+  defaults:
+    _controller: '\Drupal\external_file_proxy\Controller\ExternalFileProxyController::proxy'
+  requirements:
+    _permission: 'access content'

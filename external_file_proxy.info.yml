@@ -1,0 +1,9 @@
+name: External File Proxy
+type: module
+description: Speed up slow external files download by caching them in local filesystem.
+
+core: 8.x
+dependencies:
+  - drupal:file
+  - drupal:link
+  - media_entity:media_entity
